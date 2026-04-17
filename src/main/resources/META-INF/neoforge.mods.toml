@@ -8,7 +8,7 @@ version = "${mod_version}"
 displayName = "${mod_name}"  
 description = "${mod_description}"  
   
-[[dependencies.dsurroundfix]]  
+[[dependencies.dsurroundfixparticle]]  
 modId = "dsurround"  
 type = "required"  
 versionRange = "[0.4.0,)"  
@@ -16,4 +16,4 @@ ordering = "AFTER"
 side = "CLIENT"  
   
 [[mixins]]  
-config = "dsurroundfix.mixins.json"
+config = "dsurroundfixparticle.mixins.json"
