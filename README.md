@@ -15,6 +15,8 @@ at org.orecruncher.dsurround.lib.collections.ObjectArray.forEach(ObjectArray.jav
 `ParticleRenderCollection` 内部使用的 `ObjectArray` 容器在 `remove0()` 方法中会先将数组槽位置为 `null`，再移动元素。  
 当 `tick()`（执行 `removeIf` 删除死亡粒子）和 `render()`（执行 `forEach` 遍历渲染）并发访问同一个数组时，  
 `forEach` 可能读到被置为 `null` 的槽位，导致 NPE 崩溃。  
+
+**此报错可能在有异步粒子相关功能的模组情况下能够复现 如`Ruok`或`Async Particle`**
   
 ### 修复方式  
   
