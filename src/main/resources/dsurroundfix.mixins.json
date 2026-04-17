@@ -1,0 +1,12 @@
+{  
+  "required": true,  
+  "package": "deliciousbread481.dsurroundfix.mixin",  
+  "compatibilityLevel": "JAVA_21",  
+  "minVersion": "0.8",  
+  "client": [  
+    "MixinObjectArray"  
+  ],  
+  "injectors": {  
+    "defaultRequire": 0  
+  }  
+}
